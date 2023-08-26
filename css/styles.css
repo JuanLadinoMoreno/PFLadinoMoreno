@@ -497,5 +497,88 @@ nav .toogle-btn i {
     transform: rotateY(50deg);
   }
 }
+.menu-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.menu-index .cont-menu-index {
+  position: relative;
+  /* border: 1px solid #fff; */
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+  height: 420px;
+  padding: 10px 20px;
+}
+.menu-index .cont-menu-index:nth-child(1) {
+  background: #0F1854;
+}
+.menu-index .cont-menu-index:nth-child(2) {
+  background: #F2CB05;
+}
+.menu-index .cont-menu-index:nth-child(3) {
+  background: #EC6809;
+}
+.menu-index .cont-menu-index:nth-child(4) {
+  background: #8F5B00;
+}
+.menu-index .cont-menu-index:nth-child(5) {
+  background: #80D25B;
+}
+.menu-index .cont-menu-index h3 {
+  font-family: "Concert One";
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 200;
+  color: #FFF;
+  padding-left: 10px;
+}
+.menu-index .cont-menu-index p {
+  /* font-family: var(--font-tercera); */
+  color: #FFF;
+  width: 60%;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  z-index: 2;
+  padding-left: 10px;
+}
+@media screen and (max-width: 768px) {
+  .menu-index .cont-menu-index p {
+    width: 100%;
+  }
+}
+.menu-index .cont-menu-index img {
+  position: absolute;
+  bottom: 0;
+  right: -61px;
+  width: 280px;
+  height: 400px;
+}
+@media screen and (max-width: 768px) {
+  .menu-index .cont-menu-index img {
+    right: 0;
+    width: 180px;
+    height: 300px;
+  }
+}
+.menu-index .cont-menu-index ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+  color: #FFF;
+  width: 50%;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  z-index: 2;
+  padding-left: 40px;
+}
 
 /*# sourceMappingURL=styles.css.map */
