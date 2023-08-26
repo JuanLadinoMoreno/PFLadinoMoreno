@@ -417,5 +417,85 @@ nav .toogle-btn i {
     opacity: 0.8;
   }
 }
+.sect-bseller .cont-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.sect-bseller .cont-text img {
+  position: absolute;
+  top: -45px;
+  left: -55px;
+  width: 170px;
+  height: 160px;
+  margin-left: 50px;
+  z-index: -1;
+  animation: bestSell 5s linear infinite alternate-reverse running;
+}
+.sect-bseller .cont-text h3 {
+  font-family: "Concert One";
+  color: transparent;
+  font-size: 55px;
+  padding: 0 15px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #0F1854;
+}
+.sect-bseller .cont-text h3:nth-child(1) {
+  -webkit-text-stroke-color: #0F1854;
+}
+.sect-bseller .cont-text h3:nth-child(2) {
+  -webkit-text-stroke-color: #EC6809;
+}
+.sect-bseller .cont-text h3:nth-child(3) {
+  -webkit-text-stroke-color: #FC0;
+}
+.sect-bseller .cont-text h3:nth-child(4) {
+  -webkit-text-stroke-color: #80D25B;
+}
+.sect-bseller .cont-text p {
+  /* font-family: var(--font-tercera); */
+  color: #EC6809;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+}
+.sect-bseller .img-cont {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-template-rows: repeat(2, 200px);
+  gap: 2px;
+  align-content: center;
+  position: relative;
+}
+@media screen and (max-width: 576px) {
+  .sect-bseller .img-cont {
+    grid-template-columns: repeat(2, 140px);
+    grid-template-rows: repeat(2, 140px);
+    align-content: center;
+  }
+}
+.sect-bseller .img-cont img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+@keyframes bestSell {
+  from {
+    transform: rotateY(-50deg);
+  }
+  to {
+    transform: rotateY(50deg);
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
