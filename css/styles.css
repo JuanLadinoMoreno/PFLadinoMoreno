@@ -311,7 +311,7 @@ nav .toogle-btn i {
   width: 100%;
   height: 100vh;
   top: 0;
-  background: url(../img/hdr-img.jpg);
+  background: url(../assets/img/hdr-img.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -351,18 +351,25 @@ nav .toogle-btn i {
   text-align: center;
   font-weight: 200;
   text-transform: uppercase;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #FFF;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #FC0;
   animation: efectTitle 2.5s linear infinite alternate-reverse;
+}
+.header .header-content h1 i {
+  padding: 5px;
+  font-size: 60px;
 }
 .header .header-content h2 {
   font-family: "Concert One";
-  color: #FFF;
-  font-size: 35px;
+  color: transparent;
+  font-size: 55px;
+  padding: 0 15px;
   font-weight: 100;
   letter-spacing: 1px;
   text-align: center;
-  position: relative;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #FFF;
+  text-shadow: #FC0 5px 0 15px;
 }
 .header .header-content p {
   font-family: "Fjalla One";
@@ -402,23 +409,13 @@ nav .toogle-btn i {
 }
 @keyframes efectTitle {
   from {
-    text-shadow: rgb(255, 204, 0) 5px 0 15px;
+    text-shadow: rgb(236, 104, 9) 5px 0 15px;
     opacity: 1;
   }
   to {
-    text-shadow: rgba(255, 204, 0, 0.5) 5px 0 15px;
+    text-shadow: rgba(236, 104, 9, 0.5) 5px 0 15px;
     opacity: 0.8;
   }
-}
-.banVideo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row nowrap;
-}
-.banVideo iframe {
-  width: 90%;
-  height: 500px;
 }
 
 /*# sourceMappingURL=styles.css.map */
