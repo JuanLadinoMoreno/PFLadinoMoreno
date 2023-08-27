@@ -52,24 +52,16 @@
             text-transform: uppercase;
             -webkit-text-stroke-width: 4px;
             -webkit-text-stroke-color: $color-cuarto;
-            // text-shadow: rgba(255,204, 0, 0.9) 5px 0 15px;
-
-            // font-family: $font-primera;
-            // font-size: 115px;
-            // color: transparent;
-            // letter-spacing: 1px;
-            // text-align: center;
-            // font-weight: 200;
-            // text-transform: uppercase;
-            // -webkit-text-stroke-width: 4px;
-            // -webkit-text-stroke-color: $color-cuarto;
-            // text-shadow: $color-segundo 5px 0 25px;
-
             animation: efectTitle 2.5s linear infinite alternate-reverse;
 
             i{
                 padding: 5px;
                 font-size: 60px;
+            }
+
+            @include Phone{
+                font-size: 65px;
+                -webkit-text-stroke-width: 2px;
             }
             
         }
@@ -93,6 +85,11 @@
             -webkit-text-stroke-width: 2px;
             -webkit-text-stroke-color: #FFF;
             text-shadow: #FC0 5px 0 15px;
+
+            @include Phone{
+                font-size: 38px;
+                -webkit-text-stroke-width: 1px;
+            }
 
             // animation: efectTitle 2.5s linear infinite alternate-reverse;
             
