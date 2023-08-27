@@ -1573,4 +1573,168 @@ footer .food-icons .icons a {
   }
 }
 
+.headerPag {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  background: url("../assets/img/headers/bg-event.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: -1;
+  border-radius: 0 0 50% 50%;
+}
+.headerPag::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 24, 84, 0.43);
+  border-radius: 0 0 50% 50%;
+  z-index: -1;
+}
+.headerPag .header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+.headerPag .header-content h1 {
+  font-family: "Concert One";
+  font-size: 115px;
+  color: #FEE7A6;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .headerPag .header-content h1 {
+    font-size: 85px;
+  }
+}
+
+.sectForm {
+  position: relative;
+}
+.sectForm .map-contact {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.sectForm .contForm {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  /*FORMULARIO*/
+}
+.sectForm .contForm h2 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+.sectForm .contForm .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  height: 80%;
+  background: #fff;
+  margin: 0 50px;
+  z-index: 2;
+}
+.sectForm .contForm .form h2 {
+  font-family: "Concert One";
+  font-size: 35px;
+  text-align: center;
+  color: #0F3959;
+}
+.sectForm .contForm .form .form-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+}
+.sectForm .contForm .form .form-box .input-box {
+  position: relative;
+  margin-bottom: 35px;
+  width: 100%;
+}
+.sectForm .contForm .form .form-box .input-box input,
+.sectForm .contForm .form .form-box .input-box textarea {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 18px;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid #777;
+  outline: none;
+  resize: none;
+}
+.sectForm .contForm .form .form-box .input-box textarea {
+  min-height: 120px;
+}
+.sectForm .contForm .form .form-box .input-box span {
+  position: absolute;
+  left: 0;
+  padding-top: 5px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #888;
+  pointer-events: none;
+  /*NO TOMO EN CUENTA EL CLIC AL SPAN, NO PERMITE SELECCIONARLO*/
+  transition: all 0.5s;
+}
+.sectForm .contForm .form .form-box .input-box input:focus ~ span,
+.sectForm .contForm .form .form-box .input-box input:valid ~ span,
+.sectForm .contForm .form .form-box .input-box textarea:valid ~ span {
+  /*LA CLASE VALID APLICA ESTILOS CUANDO TIENE DATOS EL INPUT*/
+  transform: translateY(-11px);
+  color: #03A9F4;
+  font-size: 14px;
+  font-weight: 400;
+}
+.sectForm .contForm .form .form-box .input-box.btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.sectForm .contForm .form .form-box .input-box input[type=submit] {
+  cursor: pointer;
+  background: #0F3959;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #FFF;
+  border: none;
+  width: 30%;
+  padding: 12px;
+  transition: all 0.5s;
+}
+.sectForm .contForm .form .form-box .input-box input[type=submit]:hover {
+  background: #03A9F4;
+}
+.sectForm .contForm .form .form-box .input-box.w50 {
+  width: 48%;
+}
+.sectForm .contForm .form .form-box .input-box.w50 {
+  width: 48%;
+}
+.sectForm .contForm .form .form-box .input-box.w100 {
+  width: 100%;
+}
+
 /*# sourceMappingURL=styles.css.map */
