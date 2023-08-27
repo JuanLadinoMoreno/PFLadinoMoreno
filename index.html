@@ -24,7 +24,11 @@
 
 <body>
 
-    <nav>
+    <a href="#top-nav" id="btop" class="btn-top"><span class="fas fa-angle-up"></span></a>
+
+    <a href="" id="bwts" class="btn-wts"> <i class="fab fa-whatsapp"></i></a>
+
+    <nav id="top-nav">
         <a class="no-visible" href="./index.html">
             <img class="nav-logo" src="img/logoSl.png" alt="">
         </a>
@@ -342,21 +346,26 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
         </script>
 
-    <script>
-        //MENU MOVILES
-        const btntogg = document.querySelector('.toogle-btn');
-        const btntoggi = document.querySelector('.toogle-btn i');
-        const dropmen = document.querySelector('.dropdown-menus');
+        <script>
+            const btntogg = document.querySelector('.toogle-btn');
+const btntoggi = document.querySelector('.toogle-btn i');
+const dropmen = document.querySelector('.dropdown-menus');
 
-        btntogg.onclick = function () {
-            dropmen.classList.toggle('opens');
-            const isOpen = dropmen.classList.contains('opens')
+btntogg.onclick = function () {
+    dropmen.classList.toggle('opens');
+    const isOpen = dropmen.classList.contains('opens')
 
-            btntoggi.classList = isOpen
-                ? 'fa-solid fa-xmark'
-                : 'fa-solid fa-bars'
-        }
-    </script>
+    btntoggi.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+}
+
+        </script>
+
+    
+
+<script src="assets/js/general.js"></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
