@@ -14,13 +14,17 @@
         img {
             
             position: absolute;
-            top: -45px;
+            top: -55px;
             left: -55px;
             width: 170px;
             height: 160px;
             margin-left: 50px;
             z-index: -1;
             animation: bestSell 5s linear infinite alternate-reverse running;
+
+            @include Tablet{
+                top: -100px;
+            }
             // transform: rotateX(50deg);
         }
 

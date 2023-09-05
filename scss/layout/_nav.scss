@@ -21,7 +21,7 @@ nav {
             display: inline;
             margin: 0 5px;
 
-            a{
+            a {
                 color: $color-tercero;
                 padding: 0 20px;
                 font-family: $font-tercera;
@@ -77,7 +77,7 @@ nav {
             border-radius: 50%;
             border: 2px solid #FFF;
         }
-    
+
     }
 
     .toogle-btn {
@@ -134,23 +134,19 @@ nav {
         width: 100%;
         @include dFlex(space-around, center, column nowrap);
         margin-bottom: 1px solid $color-primero;
-       
+
 
         a {
-            // height: 50px;
-            font-size: 18px;
-            font-weight: 700;
-            color: $color-primero;
-            padding: 10px 0;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-             z-index: 2;
             @include dFlex(center, center, column nowrap);
-
-            
-
-
-
+            width: 100%;
+            font-size: 18px;
+            font-weight: 400;
+            color: #FFF;
+            padding: 10px 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-bottom: 1px solid rgba($color: $color-segundo, $alpha: 0.3);
+            z-index: 3;
         }
     }
 
